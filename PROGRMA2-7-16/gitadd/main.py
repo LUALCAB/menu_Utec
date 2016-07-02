@@ -47,20 +47,16 @@ class SecondWindow(QtGui.QMainWindow, segundapantalla.Ui_segundaWindow):
         self.btnIzquierda2.clicked.connect(self.btnIzquierda2Clicked)
         self.btnEconomico2.clicked.connect(self.btnEconomico2Clicked)
         self.fiveW = None
-        self.sevenw = None
+        self.sevenW = None
 
     def btnEconomico2Clicked(self):
         if self.sevenW is None:
             self.sevenW = SevenWindow(self)
         self.sevenW.show()
 
-
-
-
+#La ventana se cierra
     def btnIzquierda2Clicked(self):
-        if self.fiveW is None:
-            self.fiveW = MainWindow(self)
-        self.fiveW.show()
+        self.close()
 
 
 class ThirdWindow(QtGui.QMainWindow, platosalacarta.Ui_pcWindow):
@@ -73,12 +69,11 @@ class FourWindow(QtGui.QMainWindow, panes.Ui_panesWindow):
         QtGui.QWidget.__init__(self, parent)
         self.setupUi(self)
 
-
-
 class SevenWindow(QtGui.QMainWindow, tercerapantalla.Ui_terceraWindow):
     def __init__(self, parent=None):
         QtGui.QWidget.__init__(self, parent)
         self.setupUi(self)
+        print "create a new instance"
 
 
 def main():
