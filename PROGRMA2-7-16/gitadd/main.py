@@ -10,6 +10,8 @@ import primerapantalla #Esto se genera de esto: primerapantalla.ui
 import segundapantalla #Esto se genera de esto: segundapantalla.ui
 import tercerapantalla
 import platosalacarta
+import panes
+import tercerapantalla1
 
 class MainWindow(QtGui.QMainWindow, primerapantalla.Ui_PrimeraWindow):
     def __init__(self):
@@ -18,8 +20,10 @@ class MainWindow(QtGui.QMainWindow, primerapantalla.Ui_PrimeraWindow):
         self.setupUi(self)
         self.btnMenu.clicked.connect(self.btnMenuClicked)
         self.btnPlatoslacarta.clicked.connect(self.btnPlatosalacartaClicked)
+        self.btnSandwiches.clicked.connect(self.btnSandwichesClicked)
         self.secondW = None
         self.thirdW = None
+        self.fourW = None
 
     def btnMenuClicked(self):
         if self.secondW is None:
@@ -31,13 +35,47 @@ class MainWindow(QtGui.QMainWindow, primerapantalla.Ui_PrimeraWindow):
     		self.thirdW = ThirdWindow(self)
     	self.thirdW.show()
 
+    def btnSandwichesClicked(self):
+        if self.fourW is None:
+            self.fourW = FourWindow(self)
+        self.fourW.show()
+
 class SecondWindow(QtGui.QMainWindow, segundapantalla.Ui_segundaWindow):
     def __init__(self, parent=None):
         QtGui.QWidget.__init__(self, parent)
         self.setupUi(self)
-        #self.setAttribute(QtCore.Qt.WA_DeleteOnClose)
+        self.btnIzquierda2.clicked.connect(self.btnIzquierda2Clicked)
+        self.btnEconomico2.clicked.connect(self.btnEconomico2Clicked)
+        self.fiveW = None
+        self.sevenw = None
 
-class ThirdWindow(QtGui.QMainWindow, tercerapantalla.Ui_terceraWindow):
+    def btnEconomico2Clicked(self):
+        if self.sevenW is None:
+            self.sevenW = SevenWindow(self)
+        self.sevenW.show()
+
+
+
+
+    def btnIzquierda2Clicked(self):
+        if self.fiveW is None:
+            self.fiveW = MainWindow(self)
+        self.fiveW.show()
+
+
+class ThirdWindow(QtGui.QMainWindow, platosalacarta.Ui_pcWindow):
+    def __init__(self, parent=None):
+        QtGui.QWidget.__init__(self, parent)
+        self.setupUi(self)
+
+class FourWindow(QtGui.QMainWindow, panes.Ui_panesWindow):
+    def __init__(self, parent=None):
+        QtGui.QWidget.__init__(self, parent)
+        self.setupUi(self)
+
+
+
+class SevenWindow(QtGui.QMainWindow, tercerapantalla.Ui_terceraWindow):
     def __init__(self, parent=None):
         QtGui.QWidget.__init__(self, parent)
         self.setupUi(self)
