@@ -67,4 +67,3 @@ class Ui_PrimeraWindow(object):
         self.btnPlatoslacarta.setText(_translate("PrimeraWindow", "PLATOS A LA CARTA", None))
         self.btnSandwiches.setText(_translate("PrimeraWindow", "SANDWICHES, JUGOS Y BEBIDAS", None))
         self.menuMENUTEC.setTitle(_translate("PrimeraWindow", "MENUTEC ", None))
-

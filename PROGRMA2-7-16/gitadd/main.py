@@ -17,7 +17,7 @@ class MainWindow(QtGui.QMainWindow, primerapantalla.Ui_PrimeraWindow):
         super(self.__class__, self).__init__()
         self.setupUi(self)
         self.btnMenu.clicked.connect(self.btnMenuClicked)
-#        self.btnPlatosalacarta.clicked.connect(self.btnPlatosalacartaClicked)
+        self.btnPlatoslacarta.clicked.connect(self.btnPlatosalacartaClicked)
         self.secondW = None
         self.thirdW = None
 
@@ -25,25 +25,23 @@ class MainWindow(QtGui.QMainWindow, primerapantalla.Ui_PrimeraWindow):
         if self.secondW is None:
             self.secondW = SecondWindow(self)
         self.secondW.show()
-"""
+
     def btnPlatosalacartaClicked(self):
     	if self.thirdW is None:
     		self.thirdW = ThirdWindow(self)
     	self.thirdW.show()
-"""
+
 class SecondWindow(QtGui.QMainWindow, segundapantalla.Ui_segundaWindow):
     def __init__(self, parent=None):
         QtGui.QWidget.__init__(self, parent)
         self.setupUi(self)
         #self.setAttribute(QtCore.Qt.WA_DeleteOnClose)
 
-
-"""
 class ThirdWindow(QtGui.QMainWindow, tercerapantalla.Ui_terceraWindow):
-	def __init__(self, parent=None):
-		QtGui.QWidget.__init__(self, parent)
+    def __init__(self, parent=None):
+        QtGui.QWidget.__init__(self, parent)
         self.setupUi(self)
-"""
+
 
 def main():
     app = QtGui.QApplication(sys.argv)  # A new instance of QApplication
