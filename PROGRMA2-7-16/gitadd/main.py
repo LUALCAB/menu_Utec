@@ -158,7 +158,7 @@ class FourWindow(QtGui.QMainWindow, panes.Ui_panesWindow):
         self.btnCroissant0.clicked.connect(self.btnCroissant0Clicked)
         self.btnTriple0.clicked.connect(self.btnTriple0Clicked)
         self.sixteenW = None
-        self.sevenW = None
+        self.seventeenW = None
         self.eighteenW = None
         self.nineteenW = None
         self.twentyW = None
