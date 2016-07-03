@@ -148,13 +148,64 @@ class FourWindow(QtGui.QMainWindow, panes.Ui_panesWindow):
     def __init__(self, parent=None):
         QtGui.QWidget.__init__(self, parent)
         self.setupUi(self)
+        self.btnIzquierda5.clicked.connect(self.btnIzquierda5Clicked)
+        self.btnPanes0.clicked.connect(self.btnPanes0Clicked)
+        self.btnMixto0.clicked.connect(self.btnMixto0Clicked)
+        self.btnHamburguesa0.clicked.connect(self.btnHamburguesa0Clicked)
+        self.btnPan0.clicked.connect(self.btnPan0Clicked)
+        self.btnFilete0.clicked.connect(self.btnFilete0Clicked)
+        self.btnChorizo0.clicked.connect(self.btnChorizo0Clicked)
+        self.btnCroissant0.clicked.connect(self.btnCroissant0Clicked)
+        self.btnTriple0.clicked.connect(self.btnTriple0Clicked)
+        self.sixteenW = None
+        self.sevenW = None
+        self.eighteenW = None
+        self.nineteenW = None
+        self.twentyW = None
+        self.twentyoneW = None
+        self.twentytwoW = None
 
 
+    def btnIzquierda5Clicked(self):
+        self.close()
 
+    def btnPanes0Clicked(self):
+        self.close()
 
+    def btnMixto0Clicked(self):
+        if self.sixteenW is None:
+            self.sixteenW = SixteenWindow(self)
+        self.sixteenW.show()
 
+    def btnHamburguesa0Clicked(self):
+        if self.seventeenW is None:
+            self.seventeenW = SeventeenWindow(self)
+        self.seventeenW.show()
 
+    def btnPan0Clicked(self):
+        if self.eighteenW is None:
+            self.eighteenW = EighteenWindow(self)
+        self.eighteenW.show()
 
+    def btnFilete0Clicked(self):
+        if self.nineteenW is None:
+            self.nineteenW = NineteenWindow(self)
+        self.nineteenW.show()
+
+    def btnChorizo0Clicked(self):
+        if self.twentyW is None:
+            self.twentyW = TwentyWindow(self)
+        self.twentyW.show()
+
+    def btnCroissant0Clicked(self):
+        if self.twentyoneW is None:
+            self.twentyoneW = TwentyoneWindow(self)
+        self.twentyoneW.show()
+
+    def btnTriple0Clicked(self):
+        if self.twentytwoW is None:
+            self.twentytwoW = TwentytwoWindow(self)
+        self.twentytwoW.show()
 
 
 
@@ -203,10 +254,40 @@ class FifteenWindow(QtGui.QMainWindow, platosalacarta6.Ui_pc6Window):
         QtGui.QWidget.__init__(self, parent)
         self.setupUi(self)
 
+class SixteenWindow(QtGui.QMainWindow, panes1.Ui_panes1Window):
+    def __init__(self, parent=None):
+        QtGui.QWidget.__init__(self, parent)
+        self.setupUi(self)
 
+class SeventeenWindow(QtGui.QMainWindow, panes2.Ui_panes2Window):
+    def __init__(self, parent=None):
+        QtGui.QWidget.__init__(self, parent)
+        self.setupUi(self)
 
+class EighteenWindow(QtGui.QMainWindow, panes3.Ui_panes3Window):
+    def __init__(self, parent=None):
+        QtGui.QWidget.__init__(self, parent)
+        self.setupUi(self)
 
+class NineteenWindow(QtGui.QMainWindow, panes4.Ui_panes4Window):
+    def __init__(self, parent=None):
+        QtGui.QWidget.__init__(self, parent)
+        self.setupUi(self)
 
+class TwentyWindow(QtGui.QMainWindow, panes5.Ui_panes5Window):
+    def __init__(self, parent=None):
+        QtGui.QWidget.__init__(self, parent)
+        self.setupUi(self)
+
+class TwentyoneWindow(QtGui.QMainWindow, panes6.Ui_panes6Window):
+    def __init__(self, parent=None):
+        QtGui.QWidget.__init__(self, parent)
+        self.setupUi(self)
+
+class TwentytwoWindow(QtGui.QMainWindow, panes7.Ui_panes7Window):
+    def __init__(self, parent=None):
+        QtGui.QWidget.__init__(self, parent)
+        self.setupUi(self)
 
 
 
