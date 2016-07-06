@@ -233,7 +233,7 @@ class SixWindow(QtGui.QMainWindow, tercerapantalla1.Ui_tercera1Window):
         self.setupUi(self)
         self.btnIzquierda31.clicked.connect(self.btnIzquierda31Clicked)
         self.btnMenu31.clicked.connect(self.btnMenu31Clicked)
-        self.btnPedido31.clicked.connect(self.btnPedido31Clicked)
+        self.btnPedido31_.clicked.connect(self.btnPedido31Clicked)
 
     def btnPedido31Clicked(self):
         self.close()
@@ -267,68 +267,231 @@ class TenWindow(QtGui.QMainWindow, platosalacarta1.Ui_pc1Window):
     def __init__(self, parent=None):
         QtGui.QWidget.__init__(self, parent)
         self.setupUi(self)
+        self.btnIzquierda41.clicked.connect(self.btnIzquierda41Clicked)
+        self.btnPlatosalacarta1.clicked.connect(self.btnPlatosalacarta1Clicked)
+        self.btnPedido41.clicked.connect(self.btnPedido41Clicked)
+
+    def btnPedido41Clicked(self):
+        self.close()
+
+    def btnIzquierda41Clicked(self):
+        self.close()
+
+    def btnPlatosalacarta1Clicked(self):
+        self.close()
 
 class ElevenWindow(QtGui.QMainWindow, platosalacarta2.Ui_pc2Window):
     def __init__(self, parent=None):
         QtGui.QWidget.__init__(self, parent)
         self.setupUi(self)
+        self.btnIzquierda42.clicked.connect(self.btnIzquierda42Clicked)
+        self.btnPlatosalacarta2.clicked.connect(self.btnPlatosalacarta2Clicked)
+        self.btnPedido42.clicked.connect(self.btnPedido42Clicked)
+
+    def btnPedido42Clicked(self):
+        self.close()
+
+    def btnIzquierda42Clicked(self):
+        self.close()
+
+    def btnPlatosalacarta2Clicked(self):
+        self.close()
 
 class TwelveWindow(QtGui.QMainWindow, platosalacarta3.Ui_pc3Window):
     def __init__(self, parent=None):
         QtGui.QWidget.__init__(self, parent)
         self.setupUi(self)
+        self.btnIzquierda43.clicked.connect(self.btnIzquierda43Clicked)
+        self.btnPlatosalacarta3.clicked.connect(self.btnPlatosalacarta3Clicked)
+        self.btnPedido43.clicked.connect(self.btnPedido43Clicked)
+
+    def btnPedido43Clicked(self):
+        self.close()
+
+    def btnIzquierda43Clicked(self):
+        self.close()
+
+    def btnPlatosalacarta3Clicked(self):
+        self.close()
 
 class ThirteenWindow(QtGui.QMainWindow, platosalacarta4.Ui_pc4Window):
     def __init__(self, parent=None):
         QtGui.QWidget.__init__(self, parent)
         self.setupUi(self)
+        self.btnIzquierda44.clicked.connect(self.btnIzquierda44Clicked)
+        self.btnPlatosalacarta4.clicked.connect(self.btnPlatosalacarta4Clicked)
+        self.btnPedido44.clicked.connect(self.btnPedido44Clicked)
+
+    def btnPedido44Clicked(self):
+        self.close()
+
+    def btnIzquierda44Clicked(self):
+        self.close()
+
+    def btnPlatosalacarta4Clicked(self):
+        self.close()
 
 class FourteenWindow(QtGui.QMainWindow, platosalacarta5.Ui_pc5Window):
     def __init__(self, parent=None):
         QtGui.QWidget.__init__(self, parent)
         self.setupUi(self)
+        self.btnIzquierda45.clicked.connect(self.btnIzquierda45Clicked)
+        self.btnPlatosalacarta5.clicked.connect(self.btnPlatosalacarta5Clicked)
+        self.btnPedido45.clicked.connect(self.btnPedido45Clicked)
+
+    def btnPedido45Clicked(self):
+        self.close()
+
+    def btnIzquierda45Clicked(self):
+        self.close()
+
+    def btnPlatosalacarta5Clicked(self):
+        self.close()
+
 
 class FifteenWindow(QtGui.QMainWindow, platosalacarta6.Ui_pc6Window):
     def __init__(self, parent=None):
         QtGui.QWidget.__init__(self, parent)
         self.setupUi(self)
+        self.btnIzquierda46.clicked.connect(self.btnIzquierda46Clicked)
+        self.btnPlatosalacarta6.clicked.connect(self.btnPlatosalacarta6Clicked)
+        self.btnPedido46.clicked.connect(self.btnPedido46Clicked)
+
+    def btnPedido46Clicked(self):
+        self.close()
+
+    def btnIzquierda46Clicked(self):
+        self.close()
+
+    def btnPlatosalacarta6Clicked(self):
+        self.close()
+
 
 class SixteenWindow(QtGui.QMainWindow, panes1.Ui_panes1Window):
     def __init__(self, parent=None):
         QtGui.QWidget.__init__(self, parent)
         self.setupUi(self)
+        self.btnIzquierda51.clicked.connect(self.btnIzquierda51Clicked)
+        self.btnPanes1.clicked.connect(self.btnPanes1Clicked)
+        self.btnPedido51.clicked.connect(self.btnPedido51Clicked)
+
+    def btnPedido51Clicked(self):
+        self.close()
+
+    def btnIzquierda51Clicked(self):
+        self.close()
+
+    def btnPanes1Clicked(self):
+        self.close()
+
 
 class SeventeenWindow(QtGui.QMainWindow, panes2.Ui_panes2Window):
     def __init__(self, parent=None):
         QtGui.QWidget.__init__(self, parent)
         self.setupUi(self)
+        self.btnIzquierda52.clicked.connect(self.btnIzquierda52Clicked)
+        self.btnPanes2.clicked.connect(self.btnPanes2Clicked)
+        self.btnPedido52.clicked.connect(self.btnPedido52Clicked)
+
+    def btnPedido52Clicked(self):
+        self.close()
+
+    def btnIzquierda52Clicked(self):
+        self.close()
+
+    def btnPanes2Clicked(self):
+        self.close()
+
 
 class EighteenWindow(QtGui.QMainWindow, panes3.Ui_panes3Window):
     def __init__(self, parent=None):
         QtGui.QWidget.__init__(self, parent)
         self.setupUi(self)
+        self.btnIzquierda53.clicked.connect(self.btnIzquierda53Clicked)
+        self.btnPanes3.clicked.connect(self.btnPanes3Clicked)
+        self.btnPedido53.clicked.connect(self.btnPedido53Clicked)
+
+    def btnPedido53Clicked(self):
+        self.close()
+
+    def btnIzquierda53Clicked(self):
+        self.close()
+
+    def btnPanes3Clicked(self):
+        self.close()
+
 
 class NineteenWindow(QtGui.QMainWindow, panes4.Ui_panes4Window):
     def __init__(self, parent=None):
         QtGui.QWidget.__init__(self, parent)
         self.setupUi(self)
+        self.btnIzquierda54.clicked.connect(self.btnIzquierda54Clicked)
+        self.btnPanes4.clicked.connect(self.btnPanes4Clicked)
+        self.btnPedido54.clicked.connect(self.btnPedido54Clicked)
+
+    def btnPedido54Clicked(self):
+        self.close()
+
+    def btnIzquierda54Clicked(self):
+        self.close()
+
+    def btnPanes4Clicked(self):
+        self.close()
+
 
 class TwentyWindow(QtGui.QMainWindow, panes5.Ui_panes5Window):
     def __init__(self, parent=None):
         QtGui.QWidget.__init__(self, parent)
         self.setupUi(self)
+        self.btnIzquierda55.clicked.connect(self.btnIzquierda55Clicked)
+        self.btnPanes5.clicked.connect(self.btnPanes5Clicked)
+        self.btnPedido55.clicked.connect(self.btnPedido55Clicked)
+
+    def btnPedido55Clicked(self):
+        self.close()
+
+    def btnIzquierda55Clicked(self):
+        self.close()
+
+    def btnPanes5Clicked(self):
+        self.close()
+
 
 class TwentyoneWindow(QtGui.QMainWindow, panes6.Ui_panes6Window):
     def __init__(self, parent=None):
         QtGui.QWidget.__init__(self, parent)
         self.setupUi(self)
+        self.btnIzquierda56.clicked.connect(self.btnIzquierda56Clicked)
+        self.btnPanes6.clicked.connect(self.btnPanes6Clicked)
+        self.btnPedido56.clicked.connect(self.btnPedido56Clicked)
+
+    def btnPedido56Clicked(self):
+        self.close()
+
+    def btnIzquierda56Clicked(self):
+        self.close()
+
+    def btnPanes6Clicked(self):
+        self.close()
+
+
 
 class TwentytwoWindow(QtGui.QMainWindow, panes7.Ui_panes7Window):
     def __init__(self, parent=None):
         QtGui.QWidget.__init__(self, parent)
         self.setupUi(self)
+        self.btnIzquierda57.clicked.connect(self.btnIzquierda57Clicked)
+        self.btnPanes7.clicked.connect(self.btnPanes7Clicked)
+        self.btnPedido57.clicked.connect(self.btnPedido57Clicked)
 
+    def btnPedido57Clicked(self):
+        self.close()
 
+    def btnIzquierda57Clicked(self):
+        self.close()
+
+    def btnPanes7Clicked(self):
+        self.close()
 
 
 def main():
